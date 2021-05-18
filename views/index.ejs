@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Replit Langs</title>
+    
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <% let langnum = 0; %>
+    <% for(i in info) { %>
+      <% langnum += 1 %>
+      <% let title = info[i].key.toUpperCase().replace('_', ' ').replace('_', ' ').replace('FUCK', 'F***') %>
+        <a name="<%= info[i].key %>">
+          <h3><%= title %></h3>
+          <div class="center">
+            <p><b><%= info[i].category %></b></p>
+            <p><%= info[i].tagline %><br>
+            <a href="https://repl.it/languages/<%= info[i].key %>">Create a Repl in <%= title %>?</a></p>
+          </div>
+        </a>
+      <hr>
+    <% } %>
+    <div class="center">
+      <a name="night">
+        <h3>NIGHT</h3>
+        <p><b>Community</b></p>
+        <p>Night is an interpreted dynamically typed language that focuses on simplicity and safety.</p>
+        <p><a href="https://repl.it/@DynamicSquid/night-1">Create a Repl in NIGHT?</a></p>
+      </a>
+    </div>
+    <hr>
+    <div class="center">
+      <a name="dlang">
+        <h3>DLANG</h3>
+        <p><b>Community</b></p>
+        <p>D is a general-purpose programming language with static typing, systems-level access, and C-like syntax.</p>
+        <p><a href="https://repl.it/@CodeLongAndPros/Dlang-template">Create a Repl in DLANG?</a></p>
+      </a>
+    </div>
+    <hr>
+    <div class="center">
+      <a name="aardvark">
+        <h3>AARDVARK</h3>
+        <p><b>Community</b></p>
+        <p>Aardvark is a powerful, memory efficient language designed to meet your needs and more.</p>
+        <p><a href="https://repl.it/@Programit/Aardvark">Create a Repl in AARDVARK?</a></p>
+      </a>
+    </div>
+    <hr>
+    <p><%= langnum %> total languages! 3 community languages!</p>
+  </body>
+</html>

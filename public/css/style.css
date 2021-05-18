@@ -1,0 +1,34 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #002B36;
+}
+
+h3 {
+  font-size: 10vw;
+  color: #FDF6E3;
+}
+
+p {
+  font-size: 3vw;
+  color: #93A1A1;
+}
+
+a, a:visited {
+  color: #93A1A1;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #2AA198;
+}
+
+hr {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+.center {
+  margin: 0 auto;
+}
